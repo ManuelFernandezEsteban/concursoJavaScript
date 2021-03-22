@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/estilos.css">
+    <title>Concurso</title>
+</head>
+<body onload="inicializarPagina()">
+    <header>
+        <h1>Concurso</h1>
+    </header>
+    <main>
+        <div>
+            <h2>Tiempo</h2>
+            <p id="contador"></p>
+        </div>
+        <section class="contenedorPreguntas" id="preguntas">
+            <article class="cajaPregunta enLinea">
+                <p>¿Cúal es el mayor?</p>
+                <span class="cajaNumero" id="numero1"></span>
+                <span class="cajaNumero" id="numero2"></span>
+                <span class="cajaNumero" id="numero3"></span>
+            </article>
+            <article class="cajaPregunta">
+                <p>¿Cuántas horas ha pasado desde 1970 hasta hoy, teniendo en cuenta solo los años?</p>
+                <p>
+                    <label for="respuestaHoras">Horas:</label>
+                    <input type="text" name="respuestaHoras" id="respuestaHoras">
+                    <input type="button" value="Comprobar" id="comprobarHoras">
+                </p>
+            </article>
+        </section>
+        <nav class="botones">
+            <input type="button" value="empezar" onclick="comenzarConcurso()">
+            <input type="button" value="terminar" onclick="pararTiempo()">
+        </nav>
+    </main>
+    <footer>
+        <p>Todos los derechos reservados</p>
+    </footer>
+    <script src="js/main.js"></script>
+</body>
+</html>

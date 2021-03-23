@@ -22,18 +22,23 @@
                 <span class="cajaNumero" id="numero1"></span>
                 <span class="cajaNumero" id="numero2"></span>
                 <span class="cajaNumero" id="numero3"></span>
+                <span class="cajaNumero">
+                    <label for="respuestaNumeros">Mayor:</label>
+                    <input type="text" name="respuestaNumeros" id="respuestaNumeros">
+                    <input type="button" value="ComprobarNumeros" id="comprobarHoras">
+                </span>
             </article>
             <article class="cajaPregunta">
                 <p>¿Cuántas horas ha pasado desde 1970 hasta hoy, teniendo en cuenta solo los años?</p>
                 <p>
                     <label for="respuestaHoras">Horas:</label>
                     <input type="text" name="respuestaHoras" id="respuestaHoras">
-                    <input type="button" value="Comprobar" id="comprobarHoras">
+                    <input type="button" value="ComprobarHoras" id="comprobarHoras">
                 </p>
             </article>
         </section>
         <nav class="botones">
-            <input type="button" value="empezar" onclick="comenzarConcurso()">
+            <input type="button" value="empezar" id="botonEmpezar" onclick="comenzarConcurso()">
             <input type="button" value="terminar" onclick="pararTiempo()">
         </nav>
     </main>
